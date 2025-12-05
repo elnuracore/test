@@ -21,7 +21,6 @@ def main(page: ft.Page):
 
             greeting_history.append(f"{timestamp} - {name}")
             greeting_history[:] = greeting_history[-5:]  
-            # ------------------------------
 
             history_text.value = "История приветствий:\n" + "\n".join(greeting_history)
 
